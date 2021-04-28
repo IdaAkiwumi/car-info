@@ -14,12 +14,13 @@
 --bodycopy: 15px;
 --smallfont: "Lexend Deca", sans-serif;
 --largefont: "Big Shoulders Display", sans-serif;
---containermargin: 4em;
+--containermargin: 4rem;
 --cardpadding: 50px;
 --copypadding:30px;
 --buttonpadding:20px;
---buttonmargin:4em;
+--containerwidth: 800px;
 --cardwidth: 280px;
+--buttonmargin:45px;
 --cardheight: 500px;
 --buttonwidth: 150px;
 --corners: 10px;
@@ -27,13 +28,17 @@
 }
 
 body{
+
         background-color: var(--lgreycolor);
-        
+ 
+
     }
 
 .container{
-
-            border-radius: var(--corners);
+    margin-top: var(--containermargin);
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: var(--corners);
 }
 
 img{
@@ -98,12 +103,9 @@ button{
 
 @media only screen and (max-width: 1440px) {
 .container{
-    --containerwidth: 800px;
-    margin: var(--containermargin);
 
     display: block;
-    margin-left: auto;
-    margin-right:auto;
+
     width: var(--containerwidth);
 
     display: grid;

@@ -2,31 +2,31 @@
 
 @media only screen and (max-width: 500px) {
 
+    body{
+
+       position:relative;
+
+    }
    
     .container{
 
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
       --cardwidth: 350px;
       --cardheight: 430px;
-    display: grid;
+        width: var(--cardwidth);
 
-    margin: var(--containermargin);
+        display: grid;
+        grid-template-rows: 1fr;
 
-    grid-template-rows: 1fr;
-
-    grid-template-areas: 
-    "a"
-    "b"
-    "c";
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
     }
 
     .sedans{
         grid-area: a;
   
         width: var(--cardwidth);
-  
         border-bottom-left-radius:unset;
         border-top-right-radius: var(--corners);
     }
@@ -36,7 +36,7 @@
     .suvs{
 
        grid-area: b;
-        width: var(--cardwidth);
+
   
     }
 
