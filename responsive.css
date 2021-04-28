@@ -9,6 +9,7 @@
     margin-left: auto;
     margin-right:auto;
       --cardwidth: 350px;
+      --cardheight: 430px;
     display: grid;
 
     margin: var(--containermargin);
@@ -35,8 +36,6 @@
     .suvs{
 
        grid-area: b;
-
-                  
         width: var(--cardwidth);
   
     }
@@ -44,12 +43,14 @@
     .luxury{
 
         grid-area: c;
-
         border-top-right-radius:unset;
         border-bottom-left-radius: var(--corners);
         width: var(--cardwidth);
   
     }
 
+    button{
+        --buttonmargin:2px;
+    }
 
 }

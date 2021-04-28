@@ -94,6 +94,8 @@ button{
     font-family: var(--smallfont);
 }
 
+
+
 @media only screen and (max-width: 1440px) {
 .container{
     --containerwidth: 800px;
@@ -121,8 +123,7 @@ button{
     }
 
     .suvs{
-
-       grid-area: b;
+        grid-area: b;
         min-width: var(--cardwidth);
         height: var(--cardheight);
     }
@@ -132,7 +133,7 @@ button{
         grid-area: c;
         min-width: var(--cardwidth);
         height: var(--cardheight);
-         border-top-right-radius: var(--corners);
+        border-top-right-radius: var(--corners);
 
     }
 
