@@ -1,0 +1,55 @@
+
+
+@media only screen and (max-width: 500px) {
+
+   
+    .container{
+
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+      --cardwidth: 350px;
+    display: grid;
+
+    margin: var(--containermargin);
+
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+    }
+
+    .sedans{
+        grid-area: a;
+  
+        width: var(--cardwidth);
+  
+        border-bottom-left-radius:unset;
+        border-top-right-radius: var(--corners);
+    }
+
+    
+
+    .suvs{
+
+       grid-area: b;
+
+                  
+        width: var(--cardwidth);
+  
+    }
+
+    .luxury{
+
+        grid-area: c;
+
+        border-top-right-radius:unset;
+        border-bottom-left-radius: var(--corners);
+        width: var(--cardwidth);
+  
+    }
+
+
+}
